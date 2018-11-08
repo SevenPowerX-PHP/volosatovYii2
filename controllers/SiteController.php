@@ -16,6 +16,9 @@
 
 		public function actionIndex()
 		{
-			return 'Hello,World!!!';
+			$str = 'Hello,World!!!';
+			$str .= '<br>';
+			$str .= 'ViDeoSchool!!!';
+			return $str;
 		}
 	}
