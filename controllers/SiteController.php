@@ -19,6 +19,6 @@
 			$str = 'Hello,World!!!';
 			$str .= '<br>';
 			$str .= 'ViDeoSchool!!!';
-			return $str;
+			return $this->render('index');
 		}
 	}
