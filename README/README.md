@@ -33,3 +33,47 @@
     
  [Тестирование с Сodeception для чайников: 3 вида тестов](https://habr.com/post/329418/)
  
+ 
+ Добавляем папку web/assets и делаем commit 
+ [В чем разница между .gitignore и .gitkeep?](http://qaru.site/questions/1135/what-are-the-differences-between-gitignore-and-gitkeep)
+ .gitkeep является просто заполнителем. Фиктивный файл, поэтому git не забудет о каталоге, так как git отслеживает только файлы.
+ 
+ Если вам нужен пустой каталог и убедитесь, что он остается "чистым" для git, создайте .gitignore, содержащий следующие строки внутри:
+ 
+	 # .gitignore sample 
+	 ###################
+	 
+	 # ignore all files in this dir...
+	 *
+	 
+	 # ... except for this one.
+	 !.gitignore
+	 
+	 
+----	 
+make sure you have the latest version of the composer-asset-plugin and the config in composer.json:
+
+https://github.com/yiisoft/yii2-app-basic/blob/0c87fab0c3c9d0ada04a85f4982aeffc08b76cc7/composer.json#L33
+
+---
+I had the same issue when I updated to the latest composer.json.
+The solution: update the config/web.php too. Add
+
+'aliases' => [
+  '@bower' => '@vendor/bower-asset',
+  '@npm'   => '@vendor/npm-asset',
+],
+to $config. Like in the config/web.php on master now.
+
+
+
+	
+	"config": {
+	        "process-timeout": 1800,
+	        "fxp-asset":{
+	            "installer-paths": {
+	                "npm-asset-library": "vendor/npm",
+	                "bower-asset-library": "vendor/bower"
+	            }
+	        }
+	    },
