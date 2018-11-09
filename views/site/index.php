@@ -8,4 +8,5 @@
  */
 
 /* @var $this \yii\web\View */
-	echo 'Hello, ViDeoShool!!!';
+
+	echo '<h1>Welcome to SevenPowerX 2018!</h1>';
