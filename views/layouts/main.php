@@ -1,5 +1,6 @@
 <?php
 
+	use yii\bootstrap\Nav;
 	use yii\bootstrap\NavBar;
 
 ?>
@@ -23,7 +24,12 @@
 	$this->beginBody();
 ?>
 <?php
-
+	$menu =[
+				['label' => 'Home','url' => ['site/index']],
+				['label' => 'Join','url' => ['site/join']],
+				['label' => 'Login','url' => ['site/login']],
+				['label' => 'About','url' => ['site/about']],
+		];
 	NavBar::begin([
 		'brandLabel' => 'SevenPowerX 2018',
 		'brandUrl' => Yii::$app->homeUrl,
@@ -31,6 +37,10 @@
 			'class' => 'navbar-default navbar-fixed-top'
 		]
 	]);
+
+	echo Nav::widget([
+			'options' => ['class' => 'navbar-nav navbar-right'],
+			'items' => $menu]);
 	NavBar::end();
 ?>
 	<div class="container" style="margin-top: 70px">
