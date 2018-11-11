@@ -8,4 +8,4 @@
  */
 
 /* @var $this \yii\web\View */
-echo '<h1>Join as </h1>';
+echo '<h1>Join as</h1>';
