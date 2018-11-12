@@ -9,4 +9,6 @@
 
 /* @var $this \yii\web\View */
 
+	echo'<h1>';
 	echo 'About page';
+	echo '</h1>';
