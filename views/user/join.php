@@ -3,9 +3,9 @@
 /**
  * Created by PhpStorm.
  * User: Lavryniuk Andrii
- * Date: 10.11.2018
- * Time: 6:53
+ * Date: 12.11.2018
+ * Time: 14:54
  */
 
 /* @var $this \yii\web\View */
-
+	echo '<h1>Join as</h1>';

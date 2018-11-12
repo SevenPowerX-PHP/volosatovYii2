@@ -2,8 +2,8 @@
 	/**
 	 * Created by PhpStorm.
 	 * User: Lavryniuk Andrii
-	 * Date: 08.11.2018
-	 * Time: 6:59
+	 * Date: 12.11.2018
+	 * Time: 14:52
 	 */
 
 	namespace app\controllers;
@@ -11,23 +11,20 @@
 
 	use yii\web\Controller;
 
-	class SiteController extends Controller
+	class UserController extends Controller
 	{
-
-		public function actionIndex()
+		public function actionJoin()
 		{
 			$str = 'Hello,World!!!';
 			$str .= '<br>';
 			$str .= 'ViDeoSchool!!!';
-			return $this->render('index');
+			return $this->render('join');
 		}
-
-		public function actionAbout()
+		public function actionLogin()
 		{
 			$str = 'Hello,World!!!';
 			$str .= '<br>';
 			$str .= 'ViDeoSchool!!!';
-			return $this->render('about');
+			return $this->render('login');
 		}
-
 	}

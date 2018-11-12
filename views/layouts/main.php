@@ -26,8 +26,8 @@
 <?php
 	$menu =[
 				['label' => 'Home','url' => ['site/index']],
-				['label' => 'Join','url' => ['site/join']],
-				['label' => 'Login','url' => ['site/login']],
+				['label' => 'Join','url' => ['user/join']],
+				['label' => 'Login','url' => ['user/login']],
 				['label' => 'About','url' => ['site/about']],
 		];
 	NavBar::begin([

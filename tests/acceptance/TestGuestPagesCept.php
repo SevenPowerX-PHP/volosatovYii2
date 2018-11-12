@@ -5,11 +5,11 @@
 	$I->amOnPage('/');
 	$I->see('Welcome to SevenPowerX 2018!', 'h1');
 
-	$I->seeLink('Join', '/site/join');
-	$I->seeLink('Login', '/site/login');
+	$I->seeLink('Join', '/user/join');
+	$I->seeLink('Login', '/user/login');
 
-	$I->amOnPage('/site/join');
+	$I->amOnPage('/user/join');
 	$I->see('Join as', 'h1');
 
-	$I->amOnPage('/site/login');
+	$I->amOnPage('/user/login');
 	$I->see('Log in', 'h1');
