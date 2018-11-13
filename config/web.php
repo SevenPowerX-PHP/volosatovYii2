@@ -16,6 +16,8 @@
 				// !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
 				'cookieValidationKey' => 'SevenPowerX2018 SecretCode',
 			],
+			'db' => require __DIR__ . '\db.php'
+
 		],
 		'modules' => [
 			'debug' => [
